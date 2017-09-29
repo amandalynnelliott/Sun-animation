@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sun animation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="controls">
+        <div id="buttons">
+            <i class="fa fa-play" onclick="play()" aria-hidden="true"></i>
+            <i class="fa fa-pause" onclick="pause()" aria-hidden="true"></i>
+            <i class="fa fa-refresh" onclick="restart()" aria-hidden="true"></i>
+        </div>
+        <div id="slidercontainer">
+                <input id="slider" type="range" min="1" max="100" value="50">
+        </div>
+    </div>
+
+    
+
+    <div class="environment">
+        <div class="sky">
+            <div class="sun"></div>
+        </div>
+        <div class="ocean"></div>
+    </div>
+
+    <script src="node_modules/gsap/TweenMax.js"></script>
+    <script src="node_modules/gsap/TimelineMax.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
